@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    margin: 0,5;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+}
+
+body: {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 1%;
+    
+}
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(245, 151, 215);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo {
+    p.capital: :first-letter
+        float: left;
+        font-size: 200%;
+        text-transform: capitalize;
+        font-family: roklyn;
+        color: #000000
+        font-weight: 700;
+    
+    }
+    .navigation ul {
+        list-style: none;
+    }
+    .header .navigation ul li {
+        float: left;
+        position: relative;
+    }
+    
+    .header .navigation ul li a {
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        transition: all .2s ease;
+    }
+
+
+.header .navigation ul li a:hover {
+
+    background-color: #fc009f;
+}
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgb(254, 109, 208);
+    display: none;
+}
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    }
+     .header .navigation ul li ul li ul {
+        position: absolute;
+        top: 0;
+        right: 300px;
+     }
+    
+     .header .navigation ul li ul li {
+        width: 100%;
+     } 
+     .header .navigation ul li:hover > ul {
+        display: initial;
+     }
+     .header .navigation ul li ul li span {
+        float: right;
+        color: #ffffff;
+        background-color: #fc009f;
+        padding: 5px 10px;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 5px;
+    
+        }
+        #toggle,
+    .header label {
+        display: none;
+        cursor: pointer;
+    }
+
+    
+
+
+
+
+    .slider{
+
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+    
+    }
+    
+    .slider ul {
+    
+        display: flex;
+        padding: o;
+        width: 400%;
+        animation: automatico 15s infinite alternate linear;
+    
+    }
+    
+    .slider li {
+        width: 100%;
+        list-style: none;
+    
+    
+    }
+    
+    .slider img{
+        width: 100%;
+        height: 250px;
+    }
+    
+
+
+
+@keyframes automatico {
+
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+   50% {margin-left: -200%;}
+    70% {margin-left: -300%;}
+}
+@media(min-width: 768px) {
+    .slider img {
+        height: 950px;
+    }
+
+¨}
